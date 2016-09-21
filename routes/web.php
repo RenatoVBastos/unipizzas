@@ -12,5 +12,26 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('Home');
 });
+
+Route::get('/sabores', function () {
+    return view('sabores');
+});
+
+Route::get('/pedido', function () {
+    return view('pedido');
+});
+
+Route::get('/contato', function () {
+    return view('contato');
+});
+
+
+
+
+
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index');
