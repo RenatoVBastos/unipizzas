@@ -1,0 +1,31 @@
+body, * {
+	margin: 0;
+	border: 0;
+}
+
+.navbar {
+	height: 100px;
+	width: 100%;
+	background-color: #BF1214;
+	border-bottom: 4px solid #8C0506;
+}
+
+.navbar li {
+	list-style: none;
+	display: inline;
+	margin-right: 20px;
+
+}
+
+.navbar a {
+	font-size: 20px;
+	list-style-type:none;
+	text-decoration: none;
+	color: #F3F3F3;
+	text-transform: uppercase;
+	font-family: 'Roboto', sans-serif;
+	margin-right: 20px;
+	text-align: center;
+	margin-top: 5vh;
+	margin: 0 auto;
+}
