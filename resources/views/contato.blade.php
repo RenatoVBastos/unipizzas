@@ -1,4 +1,4 @@
-@extends('./Templates/main')
+@extends('layouts.templates')
 @section('title', 'Contato')
 @section('conteudo')
     <form class="form-horizontal">
