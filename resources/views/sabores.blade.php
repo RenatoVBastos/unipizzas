@@ -13,97 +13,121 @@
         </div>
         <!-- /.row -->
 
+        <ul id="filters" class="clearfix">
+            <li><span class="filter active" data-filter=".salgada, .doce">Todos</span></li>
+            <li><span class="filter" data-filter=".salgada">Salgada</span></li>
+            <li><span class="filter" data-filter=".doce">Doce</span></li>
+        </ul>
+
         <!-- Quebra de coluna -->
-        <div class="row">
-            <div class="col-md-4 portfolio-item">
+        <div class="row" id="divsabores">
+            <div class="col-md-4 portfolio-item" data-cat="salgada">
                 <a href="#">
-                    <img class="img-responsive" src="http://placehold.it/270x300" alt="">
+                    <img class="img-responsive" src="http://placehold.it/270x300" id="img">
                 </a>
+                <div id="texto-portfolio">
                 <h3>
                     <a href="#">Sabor</a>
                 </h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
+                <p id="subtext-port-item">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
+                </div>
             </div>
-            <div class="col-md-4 portfolio-item">
+            <div class="col-md-4 portfolio-item" data-cat="salgada">
                 <a href="#">
                     <img class="img-responsive" src="http://placehold.it/270x300" alt="">
                 </a>
-                <h3>
-                    <a href="#">Sabor</a>
-                </h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
+                <div id="texto-portfolio">
+                    <h3>
+                        <a href="#">Sabor</a>
+                    </h3>
+                    <p id="subtext-port-item">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
+                </div>
             </div>
-            <div class="col-md-4 portfolio-item">
+            <div class="col-md-4 portfolio-item" data-cat="salgada">
                 <a href="#">
                     <img class="img-responsive" src="http://placehold.it/270x300" alt="">
                 </a>
-                <h3>
-                    <a href="#">Sabor</a>
-                </h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
+                <div id="texto-portfolio">
+                    <h3>
+                        <a href="#">Sabor</a>
+                    </h3>
+                    <p id="subtext-port-item">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
+                </div>
             </div>
         </div>
         <!-- /.row -->
 
         <!-- Quebra de coluna -->
-        <div class="row">
-            <div class="col-md-4 portfolio-item">
+        <div class="row" id="divsabores">
+            <div class="col-md-4 portfolio-item" data-cat="salgada">
                 <a href="#">
                     <img class="img-responsive" src="http://placehold.it/270x300" alt="">
                 </a>
-                <h3>
-                    <a href="#">Sabor</a>
-                </h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
+                <div id="texto-portfolio">
+                    <h3>
+                        <a href="#">Sabor</a>
+                    </h3>
+                    <p id="subtext-port-item">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
+                </div>
             </div>
-            <div class="col-md-4 portfolio-item">
+            <div class="col-md-4 portfolio-item" data-cat="doce">
                 <a href="#">
                     <img class="img-responsive" src="http://placehold.it/270x300" alt="">
                 </a>
-                <h3>
-                    <a href="#">Sabor</a>
-                </h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
+                <div id="texto-portfolio">
+                    <h3>
+                        <a href="#">Sabor</a>
+                    </h3>
+                    <p id="subtext-port-item">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
+                </div>
             </div>
-            <div class="col-md-4 portfolio-item">
+            <div class="col-md-4 portfolio-item" data-cat="salgada">
                 <a href="#">
                     <img class="img-responsive" src="http://placehold.it/270x300" alt="">
                 </a>
-                <h3>
-                    <a href="#">Sabor</a>
-                </h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
+                <div id="texto-portfolio">
+                    <h3>
+                        <a href="#">Sabor</a>
+                    </h3>
+                    <p id="subtext-port-item">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
+                </div>
             </div>
         </div>
 
         <!-- Quebra de coluna -->
-        <div class="row">
-            <div class="col-md-4 portfolio-item">
+        <div class="row" id="divsabores">
+            <div class="col-md-4 portfolio-item" data-cat="doce">
                 <a href="#">
                     <img class="img-responsive" src="http://placehold.it/270x300" alt="">
                 </a>
-                <h3>
-                    <a href="#">Sabor</a>
-                </h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
+                <div id="texto-portfolio">
+                    <h3>
+                        <a href="#">Sabor</a>
+                    </h3>
+                    <p id="subtext-port-item">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
+                </div>
             </div>
-            <div class="col-md-4 portfolio-item">
+            <div class="col-md-4 portfolio-item" data-cat="doce">
                 <a href="#">
                     <img class="img-responsive" src="http://placehold.it/270x300" alt="">
                 </a>
-                <h3>
-                    <a href="#">Sabor</a>
-                </h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
+                <div id="texto-portfolio">
+                    <h3>
+                        <a href="#">Sabor</a>
+                    </h3>
+                    <p id="subtext-port-item">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
+                </div>
             </div>
-            <div class="col-md-4 portfolio-item">
+            <div class="col-md-4 portfolio-item" data-cat="doce">
                 <a href="#">
                     <img class="img-responsive" src="http://placehold.it/270x300" alt="">
                 </a>
-                <h3>
-                    <a href="#">Sabor</a>
-                </h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
+                <div id="texto-portfolio">
+                    <h3>
+                        <a href="#">Sabor</a>
+                    </h3>
+                    <p id="subtext-port-item">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
+                </div>
             </div>
         </div>
         <!-- /.row -->
