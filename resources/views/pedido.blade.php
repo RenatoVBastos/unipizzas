@@ -25,29 +25,65 @@
 
             </div>
 
-         
+            <!--complemento e CEP -->
 
-            <!-- E-mail-->
             <div class="form-group">
-                <label class="col-md-4 control-label" for="textinput">E-mail: </label>
+                <label class="col-md-3 control-label" for="textinput">Complemento:</label>
+                <div class="col-md-4">
+                    <input id="textinput" name="textinput" type="text" placeholder="bloco 3 apt 12 / referência p/ entrega " class="form-control input-md">
+                </div>
+
+                <label class="col-md-1 control-label" for="textinput">CEP:</label>
+                <div class="col-md-2">
+                    <input id="text" name="textinput" type="text" placeholder="20771-002" class="form-control input-md">
+                </div>
+
+
+            </div>
+
+            <!-- E-mail e telefone-->
+            <div class="form-group">
+                <label class="col-md-3 control-label" for="textinput">E-mail: </label>
                 <div class="col-md-4">
                     <input id="textinput" name="textinput" type="text" placeholder="joaozinho_bolaDEFOGO@gmail.com" class="form-control input-md">
                 </div>
-            </div>
 
-            <!-- Assunto-->
-            <div class="form-group">
-                <label class="col-md-4 control-label" for="textinput">Assunto: </label>
-                <div class="col-md-4">
-                    <input id="textinput" name="textinput" type="text" placeholder="Digite aqui o assunto" class="form-control input-md">
+                <label class="col-md-1 control-label" for="textinput">Telefone:</label>
+                <div class="col-md-2">
+                    <input id="text" name="textinput" type="text" placeholder="99234-5678" class="form-control input-md">
                 </div>
             </div>
 
-            <!-- Mensagem -->
+            <!-- Sabor, Tamanho, Preço-->
             <div class="form-group">
-                <label class="col-md-4 control-label" for="textarea">Mensagem: </label>
+                <label class="col-md-2 control-label" for="textinput">Escolha o sabor: </label>
+                <div class="col-md-3">
+                    <select id="selectSabor" name="selectSabor" class="form-control">
+                        <option value="1">1-Mussarela</option>
+                        <option value="2">2-Calabresa</option>
+                        <option value="3">3-Frango c/ Catupiry</option>
+                        <option value="4">4-Chocolate</option>
+                    </select>
+                </div>
+
+                <label class="col-md-3 control-label" for="selectbasic">Tamanho: </label>
+                <div class="col-md-3">
+                   <select id="selectTamanho" name="selectTamanho" class="form-control">
+                       <option value="1">Pequeno(15cm)</option>
+                       <option value="2">Médio(25cm)</option>
+                       <option value="3">Grande(35cm)</option>
+                       <option value="3">Gigante(45cm)</option>
+                   </select>
+                </div>
+
+
+            </div>
+
+            <!-- preço -->
+            <div class="form-group">
+                <label class="col-md-8 control-label" for="textinput">Preço: </label>
                 <div class="col-md-4">
-                    <textarea class="form-control" id="textarea" name="textarea" placeholder="Escreva seu texto aqui"></textarea>
+
                 </div>
             </div>
 
