@@ -6,24 +6,21 @@
 .div {
   display: block; }
 
-#filters {
-  margin: 1%;
-  padding: 0;
-  list-style: none; }
+.col-md-4 {
+  padding-bottom: 50px; }
 
-#filters li {
-  float: left; }
+.portfolioFilter {
+  padding-bottom: 50px; }
 
-#filters li span {
-  display: block;
-  padding: 5px 20px;
-  text-decoration: none;
+.portfolioFilter a {
+  margin-right: 10px;
   color: #666;
-  cursor: pointer; }
+  text-decoration: none;
+  padding-bottom: 50px; }
 
-#filters li span.active {
-  background: #e95a44;
-  color: #fff; }
+.portfolioFilter a.current {
+  font-weight: bold;
+  color: #d58512; }
 
 .container {
   position: relative;
@@ -31,18 +28,6 @@
   margin: 0 auto;
   -webkit-transition: all 1s ease;
   transition: all 1s ease; }
-
-#divsabores {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  -o-box-sizing: border-box;
-  margin: 1%;
-  float: left;
-  overflow: hidden; }
-
-.portfolio-item {
-  overflow: hidden;
-  position: relative !important; }
 
 .img-responsive {
   max-width: 100%;
@@ -53,5 +38,29 @@
 
 .img-responsive:hover {
   top: -30px; }
+
+.isotope-item {
+  z-index: 2; }
+
+.isotope-hidden.isotope-item {
+  pointer-events: none;
+  z-index: 1; }
+
+.isotope,
+.isotope .isotope-item {
+  /* change duration value to whatever you like */
+  -webkit-transition-duration: 0.8s;
+  transition-duration: 0.8s; }
+
+.isotope {
+  -webkit-transition-property: height, width;
+  transition-property: height, width; }
+
+.isotope .isotope-item {
+  -webkit-transition-property: -webkit-transform, opacity;
+  -webkit-transition-property: opacity, -webkit-transform;
+  transition-property: opacity, -webkit-transform;
+  transition-property: transform, opacity;
+  transition-property: transform, opacity, -webkit-transform; }
 
 /*# sourceMappingURL=app.css.map */

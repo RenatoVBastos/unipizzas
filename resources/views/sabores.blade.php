@@ -1,6 +1,7 @@
 @extends('layouts.templates')
 @section('title', 'Sabores')
 @section('conteudo')
+
     <div class="container">
 
         <!-- Titulo -->
@@ -13,153 +14,87 @@
         </div>
         <!-- /.row -->
 
-        <ul id="filters" class="clearfix">
-            <li><span class="filter active" data-filter=".salgada, .doce">Todos</span></li>
-            <li><span class="filter" data-filter=".salgada">Salgada</span></li>
-            <li><span class="filter" data-filter=".doce">Doce</span></li>
-        </ul>
+        <div class="portfolioFilter">
 
-        <!-- Quebra de coluna -->
-        <div class="row" id="divsabores">
-            <div class="col-md-4 portfolio-item" data-cat="salgada">
-                <a href="#">
-                    <img class="img-responsive" src="http://placehold.it/270x300" id="img">
-                </a>
-                <div id="texto-portfolio">
+            <a href="#" data-filter="*" class="current">Todos</a>
+            <a href="#" data-filter=".salgada">Salgadas</a>
+            <a href="#" data-filter=".doce">Doces</a>
+
+        </div>
+
+        <div class="portfolioContainer">
+
+            <div class="col-md-4 doce">
+                <img class="img-responsive" src="http://placehold.it/270x300" alt="image">
                 <h3>
-                    <a href="#">Sabor</a>
+                    <a href="#">Sabor Doce</a>
                 </h3>
-                <p id="subtext-port-item">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
-                </div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
             </div>
-            <div class="col-md-4 portfolio-item" data-cat="salgada">
-                <a href="#">
-                    <img class="img-responsive" src="http://placehold.it/270x300" alt="">
-                </a>
-                <div id="texto-portfolio">
-                    <h3>
-                        <a href="#">Sabor</a>
-                    </h3>
-                    <p id="subtext-port-item">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
-                </div>
+
+            <div class="col-md-4 doce">
+                <img class="img-responsive" src="http://placehold.it/270x300" alt="image">
+                <h3>
+                    <a href="#">Sabor Doce</a>
+                </h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
             </div>
-            <div class="col-md-4 portfolio-item" data-cat="salgada">
-                <a href="#">
-                    <img class="img-responsive" src="http://placehold.it/270x300" alt="">
-                </a>
-                <div id="texto-portfolio">
-                    <h3>
-                        <a href="#">Sabor</a>
-                    </h3>
-                    <p id="subtext-port-item">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
-                </div>
+
+            <div class="col-md-4 salgada">
+                <img class="img-responsive" src="http://placehold.it/270x300" alt="image">
+                <h3>
+                    <a href="#">Sabor Salgado</a>
+                </h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
+            </div>
+
+            <div class="col-md-4 salgada">
+                <img class="img-responsive" src="http://placehold.it/270x300" alt="image">
+                <h3>
+                    <a href="#">Sabor Salgado</a>
+                </h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
+            </div>
+
+            <div class="col-md-4 doce">
+                <img class="img-responsive" src="http://placehold.it/270x300" alt="image">
+                <h3>
+                    <a href="#">Sabor Doce</a>
+                </h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
+            </div>
+
+            <div class="col-md-4 salgada">
+                <img class="img-responsive" src="http://placehold.it/270x300" alt="image">
+                <h3>
+                    <a href="#">Sabor Salgado</a>
+                </h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
+            </div>
+
+            <div class="col-md-4 doce">
+                <img class="img-responsive" src="http://placehold.it/270x300" alt="image">
+                <h3>
+                    <a href="#">Sabor Doce</a>
+                </h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
+            </div>
+
+            <div class="col-md-4 salgada">
+                <img class="img-responsive" src="http://placehold.it/270x300" alt="image">
+                <h3>
+                    <a href="#">Sabor Salgado</a>
+                </h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
+            </div>
+
+            <div class="col-md-4 doce">
+                <img class="img-responsive" src="http://placehold.it/270x300" alt="image">
+                <h3>
+                    <a href="#">Sabor Doce</a>
+                </h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
             </div>
         </div>
-        <!-- /.row -->
-
-        <!-- Quebra de coluna -->
-        <div class="row" id="divsabores">
-            <div class="col-md-4 portfolio-item" data-cat="salgada">
-                <a href="#">
-                    <img class="img-responsive" src="http://placehold.it/270x300" alt="">
-                </a>
-                <div id="texto-portfolio">
-                    <h3>
-                        <a href="#">Sabor</a>
-                    </h3>
-                    <p id="subtext-port-item">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
-                </div>
-            </div>
-            <div class="col-md-4 portfolio-item" data-cat="doce">
-                <a href="#">
-                    <img class="img-responsive" src="http://placehold.it/270x300" alt="">
-                </a>
-                <div id="texto-portfolio">
-                    <h3>
-                        <a href="#">Sabor</a>
-                    </h3>
-                    <p id="subtext-port-item">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
-                </div>
-            </div>
-            <div class="col-md-4 portfolio-item" data-cat="salgada">
-                <a href="#">
-                    <img class="img-responsive" src="http://placehold.it/270x300" alt="">
-                </a>
-                <div id="texto-portfolio">
-                    <h3>
-                        <a href="#">Sabor</a>
-                    </h3>
-                    <p id="subtext-port-item">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
-                </div>
-            </div>
-        </div>
-
-        <!-- Quebra de coluna -->
-        <div class="row" id="divsabores">
-            <div class="col-md-4 portfolio-item" data-cat="doce">
-                <a href="#">
-                    <img class="img-responsive" src="http://placehold.it/270x300" alt="">
-                </a>
-                <div id="texto-portfolio">
-                    <h3>
-                        <a href="#">Sabor</a>
-                    </h3>
-                    <p id="subtext-port-item">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
-                </div>
-            </div>
-            <div class="col-md-4 portfolio-item" data-cat="doce">
-                <a href="#">
-                    <img class="img-responsive" src="http://placehold.it/270x300" alt="">
-                </a>
-                <div id="texto-portfolio">
-                    <h3>
-                        <a href="#">Sabor</a>
-                    </h3>
-                    <p id="subtext-port-item">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
-                </div>
-            </div>
-            <div class="col-md-4 portfolio-item" data-cat="doce">
-                <a href="#">
-                    <img class="img-responsive" src="http://placehold.it/270x300" alt="">
-                </a>
-                <div id="texto-portfolio">
-                    <h3>
-                        <a href="#">Sabor</a>
-                    </h3>
-                    <p id="subtext-port-item">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
-                </div>
-            </div>
-        </div>
-        <!-- /.row -->
-
-        <hr>
-
-        <!-- Paginação -->
-        <div class="row text-center">
-            <div class="col-lg-12">
-                <ul class="pagination">
-                    <li>
-                        <a href="#">&laquo;</a>
-                    </li>
-                    <li class="active">
-                        <a href="#">1</a>
-                    </li>
-                    <li>
-                        <a href="#2">2</a>
-                    </li>
-                    <li>
-                        <a href="#3">3</a>
-                    </li>
-                    <li>
-                        <a href="#4">4</a>
-                    </li>
-                    <li>
-                        <a href="#5">5</a>
-                    </li>
-                    <li>
-                        <a href="#">&raquo;</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
+    </div>
 @endsection

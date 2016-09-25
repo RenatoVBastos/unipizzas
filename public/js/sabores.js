@@ -1,23 +1,27 @@
-$(function () {
-
-    var filterList = {
-
-        init: function () {
-
-            $('#divsabores').mixItUp({
-                selectors: {
-                    target: '.portfolio-item',
-                    filter: '.filter'
-                },
-                load: {
-                    filter: '.salgada' // salgada selecionada ao entrar
-                }
-            });
-
+$(window).on('load',function(){
+    var $container = $('.portfolioContainer');
+    $container.isotope({
+        filter: '*',
+        animationOptions: {
+            duration: 750,
+            easing: 'linear',
+            queue: false
         }
+    });
 
-    };
+    $('.portfolioFilter a').click(function(){
+        $('.portfolioFilter .current').removeClass('current');
+        $(this).addClass('current');
 
-    filterList.init();
-
+        var selector = $(this).attr('data-filter');
+        $container.isotope({
+            filter: selector,
+            animationOptions: {
+                duration: 750,
+                easing: 'linear',
+                queue: false
+            }
+        });
+        return false;
+    });
 });
