@@ -33,9 +33,9 @@
                     <input id="textinput" name="textinput" type="text" placeholder="bloco 3 apt 12 / referência p/ entrega " class="form-control input-md">
                 </div>
 
-                <label class="col-md-1 control-label" for="textinput">CEP:</label>
+                <label class="col-md-1 control-label"  for="textinput">CEP:</label>
                 <div class="col-md-2">
-                    <input id="text" name="textinput" type="text" placeholder="20771-002" class="form-control input-md">
+                    <input id="text" name="textinput" type="text" required placeholder="20771-002" class="form-control input-md">
                 </div>
 
 
@@ -45,7 +45,7 @@
             <div class="form-group">
                 <label class="col-md-3 control-label" for="textinput">E-mail: </label>
                 <div class="col-md-4">
-                    <input id="textinput" name="textinput" type="text" placeholder="joaozinho_bolaDEFOGO@gmail.com" class="form-control input-md">
+                    <input id="textinput" name="textinput" type="text" required placeholder="joaozinho_bolaDEFOGO@gmail.com" class="form-control input-md">
                 </div>
 
                 <label class="col-md-1 control-label" for="textinput">Telefone:</label>
@@ -58,7 +58,8 @@
             <div class="form-group">
                 <label class="col-md-2 control-label" for="textinput">Escolha o sabor: </label>
                 <div class="col-md-3">
-                    <select id="selectSabor" name="selectSabor" class="form-control">
+                    <select required id="selectSabor" name="selectSabor"  class="form-control">
+                        <option value="">Escolha um sabor</option>
                         <option value="1">1-Mussarela</option>
                         <option value="2">2-Calabresa</option>
                         <option value="3">3-Frango c/ Catupiry</option>
@@ -68,7 +69,8 @@
 
                 <label class="col-md-3 control-label" for="selectbasic">Tamanho: </label>
                 <div class="col-md-3">
-                   <select id="selectTamanho" name="selectTamanho" class="form-control">
+                   <select required id="selectTamanho" name="selectTamanho" class="form-control">
+                       <option value="">Escolha um tamanho</option>
                        <option value="1">Pequeno(15cm)</option>
                        <option value="2">Médio(25cm)</option>
                        <option value="3">Grande(35cm)</option>
