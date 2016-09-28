@@ -9,8 +9,8 @@
             <!-- Bairro, rua, número-->
             <div class="form-group">
                 <label class="col-xs-1 control-label" for="textinput">Bairro</label>
-                <div class="col-xs-2">
-                    <input id="textinput" name="textinput" type="text" placeholder="Rua do Queiroz" class="form-control input-md">
+                <div class="col-xs-3">
+                    <input id="textinput" name="textinput" type="text" placeholder="Flamengo" class="form-control input-md">
                 </div>
 
                 <label class="col-xs-1 control-label" for="textinput">Rua</label>
@@ -19,7 +19,7 @@
                 </div>
 
                 <label  class="col-xs-1 control-label" for="textinput"> Nº: </label>
-                <div class="col-xs-1">
+                <div class="col-xs-2">
                     <input id="textinput" name="textinput" type="text" placeholder="70" class="form-control input-sm">
                 </div>
 
@@ -28,12 +28,12 @@
             <!--complemento e CEP -->
 
             <div class="form-group">
-                <label class="col-xs-2 control-label" for="textinput">Complemento:</label>
+                <label class="col-xs-1 control-label" for="textinput">Compl.:</label>
                 <div class="col-xs-4">
                     <input id="textinput" name="textinput" type="text" placeholder="bloco 3 apt 12 / referência p/ entrega " class="form-control input-md">
                 </div>
 
-                <label class="col-xs-2 control-label"  for="textinput">CEP:</label>
+                <label class="col-xs-1 control-label"  for="textinput">CEP:</label>
                 <div class="col-xs-2">
                     <input id="text" name="textinput" type="text" required placeholder="20771-002" class="form-control input-md">
                 </div>
@@ -61,7 +61,7 @@
 
             <!-- Sabor, Tamanho, Preço-->
             <div class="form-group">
-                <label class="col-xs-2 control-label" for="textinput">Escolha o sabor: </label>
+                <label class="col-xs-1 control-label" for="textinput">Sabor: </label>
                 <div class="col-xs-3">
                     <select required id="selectSabor" name="selectSabor"  class="form-control">
                         <option value="">Escolha um sabor</option>
@@ -72,7 +72,7 @@
                     </select>
                 </div>
 
-                <label class="col-xs-3 control-label" for="selectbasic">Tamanho: </label>
+                <label class="col-xs-1 control-label" for="selectbasic">Tamanho: </label>
                 <div class="col-xs-3">
                    <select required id="selectTamanho" name="selectTamanho" class="form-control">
                        <option value="">Escolha um tamanho</option>
@@ -88,7 +88,7 @@
 
             <!-- preço -->
             <div class="form-group">
-                <label class="col-xs-8 control-label" for="textinput">Preço: </label>
+                <label class="col-xs-6 control-label" for="textinput">Preço: </label>
                 <div class="col-xs-4">
 
                 </div>
@@ -96,7 +96,7 @@
 
             <!-- Botões -->
             <div class="form-group">
-                <label class="col-xs-4 control-label" for="button1id"></label>
+                <label class="col-xs-10 control-label" for="button1id"></label>
                 <div class="col-xs-8">
                     <input type="submit" id="button1id" name="button1id" class="btn btn-success"></input>
                     <input type="reset" id="button2id" name="button2id" class="btn btn-danger"></input>
