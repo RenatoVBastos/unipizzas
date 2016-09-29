@@ -25,7 +25,7 @@
         <div class="portfolioContainer">
 
             <div class="col-md-4 doce">
-                <img class="img-responsive" src="http://placehold.it/270x300" alt="image">
+                <img class="img-responsive circle" src="http://lorempizza.com/270/300" alt="image">
                 <h4>
                     <a href="#">Sabor Doce</a>
                 </h4>
@@ -33,7 +33,7 @@
             </div>
 
             <div class="col-md-4 doce">
-                <img class="img-responsive" src="http://placehold.it/270x300" alt="image">
+                <img class="img-responsive circle" src="http://lorempizza.com/270/300" alt="image">
                 <h4>
                     <a href="#">Sabor Doce</a>
                 </h4>
@@ -41,7 +41,7 @@
             </div>
 
             <div class="col-md-4 salgada">
-                <img class="img-responsive" src="http://placehold.it/270x300" alt="image">
+                <img class="img-responsive circle" src="http://lorempizza.com/270/300" alt="image">
                 <h4>
                     <a href="#">Sabor Salgado</a>
                 </h4>
@@ -49,7 +49,7 @@
             </div>
 
             <div class="col-md-4 salgada">
-                <img class="img-responsive" src="http://placehold.it/270x300" alt="image">
+                <img class="img-responsive circle" src="http://lorempizza.com/270/300" alt="image">
                 <h4>
                     <a href="#">Sabor Salgado</a>
                 </h4>
@@ -57,7 +57,7 @@
             </div>
 
             <div class="col-md-4 doce">
-                <img class="img-responsive" src="http://placehold.it/270x300" alt="image">
+                <img class="img-responsive circle" src="http://lorempizza.com/270/300" alt="image">
                 <h4>
                     <a href="#">Sabor Doce</a>
                 </h4>
@@ -65,7 +65,7 @@
             </div>
 
             <div class="col-md-4 salgada">
-                <img class="img-responsive" src="http://placehold.it/270x300" alt="image">
+                <img class="img-responsive circle" src="http://lorempizza.com/270/300" alt="image">
                 <h4>
                     <a href="#">Sabor Salgado</a>
                 </h4>
@@ -73,7 +73,7 @@
             </div>
 
             <div class="col-md-4 doce">
-                <img class="img-responsive" src="http://placehold.it/270x300" alt="image">
+                <img class="img-responsive circle" src="http://lorempizza.com/270/300" alt="image">
                 <h4>
                     <a href="#">Sabor Doce</a>
                 </h4>
@@ -81,7 +81,7 @@
             </div>
 
             <div class="col-md-4 salgada">
-                <img class="img-responsive" src="http://placehold.it/270x300" alt="image">
+                <img class="img-responsive circle" src="http://lorempizza.com/270/300" alt="image">
                 <h4>
                     <a href="#">Sabor Salgado</a>
                 </h4>
@@ -89,7 +89,7 @@
             </div>
 
             <div class="col-md-4 doce">
-                <img class="img-responsive" src="http://placehold.it/270x300" alt="image">
+                <img class="img-responsive circle" src="http://lorempizza.com/270/300" alt="image">
                 <h4>
                     <a href="#">Sabor Doce</a>
                 </h4>
