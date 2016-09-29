@@ -2,6 +2,7 @@
 <html>
 <head>
     <link rel="stylesheet" href="{{asset('css/bootstrap.min.css')}}">
+	<link rel="stylesheet" href="{{asset('materialize/css/materialize.min.css')}}">
     @yield('css')
 	<title>UniPizzas - @yield('title')</title>
 	<link rel="stylesheet" href="{{asset('css/app.css')}}" type="text/css">
