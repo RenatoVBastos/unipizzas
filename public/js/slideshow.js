@@ -1,3 +1,2 @@
-/**
- * Created by Renato on 28/09/2016.
- */
+$('.carousel').carousel();
+$('.carousel-slider').slider({full_width: true});
