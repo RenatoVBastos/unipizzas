@@ -11,9 +11,10 @@
 |
 */
 
-Route::get('/', function () {
-    return view('Home');
-});
+Route::get('/', ['as' => 'home', function () {
+    return view('home');
+
+}]);
 
 Route::get('/sabores', function () {
     return view('sabores');
@@ -27,6 +28,10 @@ Route::get('/contato', function () {
     return view('contato');
 });
 
+Route::get('/logout', function () {
+    Auth::logout();
+    return redirect()->route('home');
+});
 
 
 
