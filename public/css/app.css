@@ -1,3 +1,17 @@
+.login {
+  padding-top: 250px; }
+
+.botao-login {
+  padding-top: 50px; }
+
+.checkbox-orange[type="checkbox"].filled-in:checked + label:after {
+  border: 2px solid #ff9800;
+  background-color: #ff9800; }
+
+/* label focus color */
+.input-field input[type=text]:focus + label {
+  color: #d84315; }
+
 * {
   margin: 0;
   padding: 0;

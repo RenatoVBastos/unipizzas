@@ -1,0 +1,13 @@
+.login {
+  padding-top: 250px;
+}
+
+.botao-login {
+  padding-top: 50px;
+}
+
+.checkbox-orange[type="checkbox"].filled-in:checked + label:after{
+  border: 2px solid #ff9800;
+  background-color: #ff9800;
+}
+
