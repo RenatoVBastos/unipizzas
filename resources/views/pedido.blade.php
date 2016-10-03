@@ -43,20 +43,22 @@
 
             <!-- E-mail , telefone e CPF-->
             <div class="form-group">
+                <label class="col-xs-1 control-label" for="textinput">CPF:</label>
+                <div class="col-xs-2">
+                    <input id="text" name="textinput" type="text" placeholder="000.000.000-00" class="form-control input-md">
+                </div>                
+
                 <label class="col-xs-1 control-label" for="textinput">E-mail: </label>
-                <div class="col-xs-3">
+                <div class="col-xs-4">
                     <input id="textinput" name="textinput" type="text" required placeholder="joaozinho_bolaDEFOGO@gmail.com" class="form-control input-md">
                 </div>
 
                 <label class="col-xs-1 control-label" for="textinput">Telefone:</label>
-                <div class="col-xs-3">
+                <div class="col-xs-2">
                     <input id="text" name="textinput" type="text" placeholder="99234-5678" class="form-control input-md">
                 </div>
 
-                <label class="col-xs-1 control-label" for="textinput">CPF:</label>
-                <div class="col-xs-3">
-                    <input id="text" name="textinput" type="text" placeholder="000.000.000-00" class="form-control input-md">
-                </div>
+
             </div>
 
             <!-- Sabor, Tamanho, Preço-->
