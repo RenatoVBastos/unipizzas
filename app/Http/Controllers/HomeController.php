@@ -25,4 +25,10 @@ class HomeController extends Controller
     {
         return view('home');
     }
+
+    public function logOut(){
+        Auth::logout();
+        return redirect()->route('home');
+    }
+
 }

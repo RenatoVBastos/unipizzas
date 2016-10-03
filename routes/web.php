@@ -16,6 +16,7 @@ Route::get('/', ['as' => 'home', function () {
 
 }]);
 
+/*
 Route::get('/sabores', function () {
     return view('sabores');
 });
@@ -33,10 +34,20 @@ Route::get('/logout', function () {
     return redirect()->route('home');
 });
 
-
-
+*/
 
 
 Auth::routes();
 
 Route::get('/home', 'HomeController@index');
+
+Route::get('/pedido', 'OrdersController@index');
+
+Route::get('/sabores', 'FlavorsController@index');
+
+Route::get('/contato', 'ContactController@index');
+
+Route::get('/logout', 'HomeController@logOut');
+
+
+
