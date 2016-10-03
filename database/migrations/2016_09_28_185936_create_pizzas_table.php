@@ -14,7 +14,7 @@ class CreatePizzasTable extends Migration
     public function up()
     {
         Schema::create('pizzas', function (Blueprint $table) {
-            $table->string('sabor');
+            $table->string('sabor')->unique();
             $table->string('descricao');
             $table->string('filtro');
             $table->float('preco');

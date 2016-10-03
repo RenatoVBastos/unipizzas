@@ -1,5 +1,12 @@
 @extends('layouts.templates')
-@section('Title', 'Administrador')
+@section('title', 'Administrador')
 @section('conteudo')
-    bla
+    <div class="row">
+        <div class="col s6">
+            CRUD
+        </div>
+        <div class="col s6">
+            View de pedidos
+        </div>
+    </div>
 @endsection

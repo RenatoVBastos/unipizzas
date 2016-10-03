@@ -4,15 +4,27 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-class FlavorsController extends Controller
-{
-   
+use App\Http\Requests;
 
+class Admin extends Controller
+{
+    /**
+     * Display a listing of the resource.
+     *
+     * @return \Illuminate\Http\Response
+     */
     public function index()
     {
-        return view('sabores');
+
+            return view('adm');
+
     }
 
+    /**
+     * Show the form for creating a new resource.
+     *
+     * @return \Illuminate\Http\Response
+     */
     public function create()
     {
         //
@@ -26,13 +38,7 @@ class FlavorsController extends Controller
      */
     public function store(Request $request)
     {
-        $this->validate($request, [
-            'sabor' => 'required',
-            'descricao' => 'required',
-            'preco' => 'required',
-            'imagem' => 'required',
-            'filtro'
-            ]);
+        //
     }
 
     /**

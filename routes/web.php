@@ -39,15 +39,16 @@ Route::get('/logout', function () {
 
 Auth::routes();
 
-Route::get('/home', 'HomeController@index');
+Route::get('/home', 'HomeController@index')->name('home');
 
-Route::get('/pedido', 'OrdersController@index');
+Route::get('/pedido', 'OrdersController@index')->name('pedido');
 
-Route::get('/sabores', 'FlavorsController@index');
+Route::get('/sabores', 'FlavorsController@index')->name('sabores');
 
-Route::get('/contato', 'ContactController@index');
+Route::get('/contato', 'ContactController@index')->name('contato');
 
-Route::get('/logout', 'HomeController@logOut');
+Route::get('/logout', 'HomeController@logOut')->name('logout');
 
+Route::get('/admin', 'Admin@index')->name('admin');
 
 
