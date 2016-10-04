@@ -1,6 +1,9 @@
 <?php
 
 use Illuminate\Database\Seeder;
+use App\Order;
+
+use Faker\Factory as Faker;
 
 class OrdersTableSeeder extends Seeder
 {
@@ -11,6 +14,7 @@ class OrdersTableSeeder extends Seeder
      */
     public function run()
     {
+        $faker = Faker::create();
         DB::table('orders')->insert ([
             'data' => $faker->date('Y-m-d', 'now'),
             'bairro' => $faker->cityPreffix,	//word,
