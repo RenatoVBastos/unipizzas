@@ -10,13 +10,13 @@ class UsersTableSeeder extends Seeder
      *
      * @return void
      */
-    public function run()
-    {
-        DB::table('Users')->truncate();
-        DB::table('users')->insert([
-            'name' => str_random(10),
-            'email' =>'admin@admin',
-            'password' => bcrypt('admin')
-            ]);
-    }
+ public function run()
+{
+    DB::table('users')->truncate();
+    DB::table('users')->insert([
+        'name' => str_random(10),
+        'email' =>'admin@admin',
+        'password' => bcrypt('admin')
+    ]);
+}
 }

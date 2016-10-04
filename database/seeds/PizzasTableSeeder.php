@@ -14,9 +14,8 @@ class PizzasTableSeeder extends Seeder
      */
     public function run()
     {
-        DatabaseSeeder::emptyTable('pizzas');
-        DatabaseSeeder::emptyDirectory(public_path('storage/pizzas'), ['.gitignore']);
         $faker = Faker::create();
+        DB::table('pizzas')->truncate();
         DB::table('pizzas')->insert ([
             'sabor' => $faker->word,
             'descricao' => $faker->sentences(2, false),
