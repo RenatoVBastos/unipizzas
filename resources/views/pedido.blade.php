@@ -66,7 +66,7 @@
             <div class="form-group">
                 <label class="col-xs-1 control-label" for="textinput">Sabor: </label>
                 <div class="col-xs-3">
-                    <select required id="pizza_id" name="pizza_id" class="form-control">
+                    <select required id="pizza_id" name="pizza_id">
                         <option value="">Escolha um sabor</option>
                         <option value="1">1-Mussarela</option>
                         <option value="2">2-Calabresa</option>
@@ -77,7 +77,7 @@
 
                 <label class="col-xs-1 control-label" for="selectbasic">Tamanho: </label>
                 <div class="col-xs-3">
-                   <select required id="tamanho" name="tamanho" class="form-control">
+                   <select required id="tamanho" name="tamanho">
                        <option value="">Escolha um tamanho</option>
                        <option value="1">Pequeno(15cm)</option>
                        <option value="2">Médio(25cm)</option>

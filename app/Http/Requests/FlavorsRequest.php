@@ -13,7 +13,7 @@ class FlavorsRequest extends FormRequest
      */
     public function authorize()
     {
-        return false;
+        return true;
     }
 
     /**
@@ -26,7 +26,7 @@ class FlavorsRequest extends FormRequest
         return [
                 'sabor' => 'required',
                 'descricao' => 'required',
-                'preco' => 'required',
+                'preco' => 'required|numeric',
                 'imagem' => 'required',
                 'filtro'
 
