@@ -35,3 +35,19 @@ body, * {
 	margin-top: 5vh;
 	margin: 0 auto;
 }
+
+.form-horizontal {
+	padding: 30px 0;
+}
+
+.darken-3 {
+	background-color: #9C0B12;
+}
+
+.page-footer{
+	background: #212121;
+}
+
+#text-home {
+	text-align: justify;
+}

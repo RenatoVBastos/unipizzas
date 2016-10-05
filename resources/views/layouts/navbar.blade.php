@@ -1,6 +1,6 @@
 @section('navbar')
     <div class="navbar-fixed">
-        <nav class="deep-orange darken-3" >
+        <nav class="darken-3" >
             <div class="nav-wrapper container left">
                 <ul class="right">
                     @if(Auth::check())
