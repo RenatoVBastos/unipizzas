@@ -3,9 +3,11 @@
         <script type="text/javascript" src="{{asset('js/jquery.min.js')}}"></script>
         <script type="text/javascript" src="{{asset('js/bootstrap.js')}}"></script>
         <script type="text/javascript" src="{{asset('js/bootstrap.min.js')}}"></script>
-        <script type="text/javascript" src="{{asset('materialize/js/materialize.min.js')}}"></script>
+        <script type="text/javascript" src="{{asset('materialize/js/materialize.js')}}"></script>
         <script type="text/javascript" src="{{asset('js/isotope.pkgd.min.js')}}"></script>
         <script type="text/javascript" src="{{asset('js/sabores.js')}}"></script>
+        <script type="text/javascript" src="{{asset('js/admin.js')}}"></script>
+
 
         <div class="container">
             <link rel='stylesheet prefetch' href='http://netdna.bootstrapcdn.com/font-awesome/3.1.1/css/font-awesome.css'>

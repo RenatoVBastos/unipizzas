@@ -51,4 +51,6 @@ Route::get('/logout', 'HomeController@logOut')->name('logout');
 
 Route::get('/admin', 'Admin@index')->name('admin');
 
+Route::post('modalSabores', 'FlavorsController@store')->name('modalSabores');
+
 

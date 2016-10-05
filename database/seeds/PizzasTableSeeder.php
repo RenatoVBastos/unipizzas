@@ -15,10 +15,9 @@ class PizzasTableSeeder extends Seeder
     public function run()
     {
         $faker = Faker::create();
-        DB::table('pizzas')->truncate();
         DB::table('pizzas')->insert ([
             'sabor' => $faker->word,
-            'descricao' => $faker->sentences(2, false),
+            'descricao' => $faker->text(200),
             'filtro' => $faker->word,
             'preco' => $faker->randomFloat(2, 0, 50),
 

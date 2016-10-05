@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Pizza;
 
 class FlavorsController extends Controller
 {
@@ -33,6 +34,10 @@ class FlavorsController extends Controller
             'imagem' => 'required',
             'filtro'
             ]);
+
+        \App\Pizza::create($request->all());
+
+        return back()->with(['success' => 'Sabor adicionado com sucesso.']);
     }
 
     /**

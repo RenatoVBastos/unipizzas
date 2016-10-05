@@ -20,7 +20,7 @@ class CreatePizzasTable extends Migration
             $table->string('descricao');
             $table->string('filtro');
             $table->float('preco');
-            $table->string('imagem');
+            $table->string('imagem')->nullable();
             $table->timestamps();
             $table->softDeletes();
         });
