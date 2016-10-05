@@ -1,7 +1,8 @@
 @extends('layouts.templates')
 @section('title', 'Pedidos')
 @section('conteudo')
-    <form class="form-horizontal">
+    <form action="{{ action('OrdersController@store') }}" method="post" class="form-horizontal">
+        {{csrf_field()}}
         <fieldset>
 
             <legend>Faça seu pedido!</legend>
@@ -10,17 +11,17 @@
             <div class="form-group">
                 <label class="col-xs-1 control-label" for="textinput">Bairro</label>
                 <div class="col-xs-3">
-                    <input id="textinput" name="textinput" type="text" placeholder="Flamengo" class="form-control input-md">
+                    <input id="bairro" name="bairro" type="text" placeholder="Flamengo" class="form-control input-md">
                 </div>
 
                 <label class="col-xs-1 control-label" for="textinput">Rua</label>
                 <div class="col-xs-4">
-                    <input id="textinput" name="textinput" type="text" placeholder="Rua do Queiroz" class="form-control input-md">
+                    <input id="rua" name="rua" type="text" placeholder="Rua do Queiroz" class="form-control input-md">
                 </div>
 
                 <label  class="col-xs-1 control-label" for="textinput"> Nº: </label>
                 <div class="col-xs-2">
-                    <input id="textinput" name="textinput" type="text" placeholder="70" class="form-control input-sm">
+                    <input id="numero" name="numero" type="text" placeholder="70" class="form-control input-sm">
                 </div>
 
             </div>
@@ -30,12 +31,12 @@
             <div class="form-group">
                 <label class="col-xs-1 control-label" for="textinput">Compl.:</label>
                 <div class="col-xs-4">
-                    <input id="textinput" name="textinput" type="text" placeholder="bloco 3 apt 12 / referência p/ entrega " class="form-control input-md">
+                    <input id="complemento" name="complemento" type="text" placeholder="bloco 3 apt 12 / referência p/ entrega " class="form-control input-md">
                 </div>
 
                 <label class="col-xs-1 control-label"  for="textinput">CEP:</label>
                 <div class="col-xs-2">
-                    <input id="text" name="textinput" type="text" required placeholder="20771-002" class="form-control input-md">
+                    <input id="cep" name="cep" type="text" required placeholder="20771-002" class="form-control input-md">
                 </div>
 
 
@@ -45,17 +46,17 @@
             <div class="form-group">
                 <label class="col-xs-1 control-label" for="textinput">CPF:</label>
                 <div class="col-xs-2">
-                    <input id="text" name="textinput" type="text" placeholder="000.000.000-00" class="form-control input-md">
+                    <input id="cpf" name="cpf" type="text" placeholder="000.000.000-00" class="form-control input-md">
                 </div>                
 
                 <label class="col-xs-1 control-label" for="textinput">E-mail: </label>
                 <div class="col-xs-4">
-                    <input id="textinput" name="textinput" type="text" required placeholder="joaozinho_bolaDEFOGO@gmail.com" class="form-control input-md">
+                    <input id="email" name="email" type="text" required placeholder="joaozinho_bolaDEFOGO@gmail.com" class="form-control input-md">
                 </div>
 
                 <label class="col-xs-1 control-label" for="textinput">Telefone:</label>
                 <div class="col-xs-2">
-                    <input id="text" name="textinput" type="text" placeholder="99234-5678" class="form-control input-md">
+                    <input id="telefone" name="telefone" type="text" placeholder="99234-5678" class="form-control input-md">
                 </div>
 
 
@@ -65,7 +66,7 @@
             <div class="form-group">
                 <label class="col-xs-1 control-label" for="textinput">Sabor: </label>
                 <div class="col-xs-3">
-                    <select required id="selectSabor" name="selectSabor"  class="form-control">
+                    <select required id="pizza_id" name="pizza_id" class="form-control">
                         <option value="">Escolha um sabor</option>
                         <option value="1">1-Mussarela</option>
                         <option value="2">2-Calabresa</option>
@@ -76,7 +77,7 @@
 
                 <label class="col-xs-1 control-label" for="selectbasic">Tamanho: </label>
                 <div class="col-xs-3">
-                   <select required id="selectTamanho" name="selectTamanho" class="form-control">
+                   <select required id="tamanho" name="tamanho" class="form-control">
                        <option value="">Escolha um tamanho</option>
                        <option value="1">Pequeno(15cm)</option>
                        <option value="2">Médio(25cm)</option>
@@ -92,7 +93,7 @@
             <div class="form-group">
                 <label class="col-xs-6 control-label" for="textinput">Preço: </label>
                 <div class="col-xs-4">
-
+                    <input id="preco_final" name="preco_final" type="text" value="0,00" class="form-control input-md">
                 </div>
             </div>
 
@@ -100,7 +101,7 @@
             <div class="form-group">
                 <label class="col-xs-10 control-label" for="button1id"></label>
                 <div class="col-xs-8">
-                    <input type="submit" id="button1id" name="button1id" class="btn btn-success"></input>
+                    <input type="submit" id="enviar_pedido" name="enviar_pedido" class="btn btn-success"></input>
                     <input type="reset" id="button2id" name="button2id" class="btn btn-danger"></input>
                 </div>
             </div>

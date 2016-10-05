@@ -53,4 +53,8 @@ Route::get('/admin', 'Admin@index')->name('admin');
 
 Route::post('modalSabores', 'FlavorsController@store')->name('modalSabores');
 
+Route::post('/pedido', 'OrdersController@store')->name('enviar_pedido');
+
+
+
 
