@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Pizza;
+use App\Http\Requests\FlavorsRequest;
 
 class FlavorsController extends Controller
 {
@@ -25,15 +26,8 @@ class FlavorsController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(FlavorsRequest $request)
     {
-        $this->validate($request, [
-            'sabor' => 'required',
-            'descricao' => 'required',
-            'preco' => 'required',
-            'imagem' => 'required',
-            'filtro'
-            ]);
 
         \App\Pizza::create($request->all());
 
