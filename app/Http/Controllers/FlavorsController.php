@@ -5,15 +5,10 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Pizza;
 use App\Http\Requests\FlavorsRequest;
+use Illuminate\Support\Facades\Session;
 
 class FlavorsController extends Controller
 {
-   
-
-    public function index()
-    {
-        return view('sabores');
-    }
 
     public function create()
     {
@@ -31,7 +26,7 @@ class FlavorsController extends Controller
 
         \App\Pizza::create($request->all());
 
-        return back()->with(['success' => 'Sabor adicionado com sucesso.']);
+        Session::flash('message', 'Sabor adicionado com sucesso!');
     }
 
     /**

@@ -8,14 +8,6 @@ use App\Http\Requests\OrdersRequest;
 
 class OrdersController extends Controller
 {
-   
-
-    public function index()
-    {
-        return view('pedido');
-    }
-
-
 
  	public function create()
     {

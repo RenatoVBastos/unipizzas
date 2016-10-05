@@ -11,49 +11,44 @@
 |
 */
 
-Route::get('/', ['as' => 'home', function () {
-    return view('home');
 
-}]);
-
-/*
-Route::get('/sabores', function () {
-    return view('sabores');
-});
-
-Route::get('/pedido', function () {
-    return view('pedido');
-});
-
-Route::get('/contato', function () {
-    return view('contato');
-});
-
-Route::get('/logout', function () {
-    Auth::logout();
-    return redirect()->route('home');
-});
-
-*/
-
-
+//Auth
 Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('login');
 
-Route::get('/pedido', 'OrdersController@index')->name('pedido');
 
-Route::get('/sabores', 'FlavorsController@index')->name('sabores');
+//Rotas do visitante
+Route::get('home',['as' => 'login', 'uses' => 'HomeController@index']);
 
-Route::get('/contato', 'ContactController@index')->name('contato');
+Route::get('/', ['as' => 'home', 'uses' => 'PageController@home']);
 
-Route::get('/logout', 'HomeController@logOut')->name('logout');
+Route::get('pedido', ['as' => 'pedido', 'uses' => 'PageController@pedido']);
 
-Route::get('/admin', 'Admin@index')->name('admin');
+Route::get('sabores', ['as' => 'sabores', 'uses' => 'PageController@sabores']);
 
-Route::post('modalSabores', 'FlavorsController@store')->name('modalSabores');
+Route::get('contato', ['as' => 'contato', 'uses' => 'PageController@contato']);
 
-Route::post('/pedido', 'OrdersController@store')->name('enviar_pedido');
+Route::get('logout', ['as' => 'logout', 'uses' => 'HomeController@logOut']);
+
+
+
+
+
+//Rotas das CRUDs
+
+Route::post('modalSabores', ['as' => 'modalCSabores', 'uses' => 'FlavorsController@store']);
+
+Route::post('pedido', ['as' => 'enviar_pedido', 'uses' => 'OrdersController@store']);
+
+
+
+
+
+//Rotas do admin
+
+Route::group(['middleware' => 'auth'], function () {
+    Route::get('admin', ['as' => 'admin', 'uses' => 'Admin@index']);
+});
 
 
 

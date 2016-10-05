@@ -27,8 +27,8 @@ class FlavorsRequest extends FormRequest
                 'sabor' => 'required',
                 'descricao' => 'required',
                 'preco' => 'required|numeric',
-                'imagem' => 'required',
-                'filtro'
+                'imagem',
+                'filtro' => 'required'
 
         ];
     }

@@ -93,7 +93,7 @@
             <div class="form-group">
                 <label class="col-xs-6 control-label" for="textinput">Preço: </label>
                 <div class="col-xs-4">
-                    <input id="preco_final" name="preco_final" type="text" value="0,00" class="form-control input-md">
+                    <input id="preco_final" name="preco_final" type="text" placeholder="0.00" class="form-control input-md">
                 </div>
             </div>
 

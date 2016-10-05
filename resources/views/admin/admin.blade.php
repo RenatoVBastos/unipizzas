@@ -31,7 +31,7 @@
                     </div>
 
                     <div class="file-field input-field col s12">
-                        <div class="btn deep-orange darken-3">
+                        <div class="btn">
                             <span>Foto</span>
                             <input type="file" name="imagem">
                         </div>
@@ -43,7 +43,7 @@
 
                 </div>
 
-                <button type="submit" class="btn btn-primary deep-orange darken-3">Criar Sabor</button>
+                <button type="submit" class="btn btn-primary">Criar Sabor</button>
 
             </form>
         </div>
