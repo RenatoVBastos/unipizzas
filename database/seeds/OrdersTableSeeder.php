@@ -16,7 +16,6 @@ class OrdersTableSeeder extends Seeder
     {
         $faker = Faker::create();
         DB::table('orders')->insert ([
-            'data' => $faker->date('Y-m-d', 'now'),
             'bairro' => $faker->word,
             'rua' => $faker->name,
             'numero' => $faker->numberBetween(1, 2000),

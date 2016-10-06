@@ -1,6 +1,8 @@
 @extends('layouts.templates')
 @section('title', 'Pedidos')
 @section('conteudo')
+    <script type='text/javascript' src='//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js'></script>
+
     <form action="{{ action('OrdersController@store') }}" method="post" class="form-horizontal">
         {{csrf_field()}}
         <fieldset>
@@ -67,14 +69,10 @@
             <div class="form-group">
                 <label class="col-xs-1 control-label" for="">Sabor: </label>
                 <div class="col-xs-3">
-                    <select required id="pizza_id" name="pizza_id">
-                        <option value="">Escolha um sabor</option>
-                        <option value="">1-Mussarela</option>
-                        <option value="">2-Calabresa</option>
-                        <option value="">3-Frango c/ Catupiry</option>
-                        <option value="">4-Chocolate</option>
+                    <select required id="id_pizza" name="id_pizza">
+                        <option value="NULL">Escolha um sabor</option>
                         @foreach($pizzas as $pizza)
-                            <option value="{{$pizza->preco}}">{{$pizza->id}} - {{$pizza->sabor}}</option>
+                            <option value="{{$pizza->id}}">{{$pizza->id}} - {{$pizza->sabor}}</option>
                         @endforeach
                     </select>
                 </div>
@@ -85,11 +83,11 @@
                 <label class="col-xs-1 control-label" for="selectbasic">Tamanho: </label>
                 <div class="col-xs-3">
                    <select required id="tamanho" name="tamanho">
-                       <option value="">Escolha um tamanho</option>
-                       <option value="5.00">Pequeno(15cm)</option>
-                       <option value="10.00">Médio(25cm)</option>
-                       <option value="15.00">Grande(35cm)</option>
-                       <option value="20.00">Gigante(45cm)</option>
+                       <option value="NULL">Escolha um tamanho</option>
+                       <option value="1">Pequeno(15cm)</option>
+                       <option value="2">Médio(25cm)</option>
+                       <option value="3">Grande(35cm)</option>
+                       <option value="4">Gigante(45cm)</option>
                    </select>
                 </div>
 
@@ -101,7 +99,7 @@
             <div class="form-group">
                 <label class="col-xs-6 control-label" for="textinput">Preço: </label>
                 <div class="col-xs-2">
-                    <input id="preco_final" name="preco_final" readonly="readonly" type="numeric" value="0.00" class="form-control">
+                    <input id="preco_final" name="preco_final" readonly="readonly" type="float.fixed(2)" value="0.00" class="form-control">
                 </div>
             </div>
 

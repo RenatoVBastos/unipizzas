@@ -24,7 +24,6 @@ class OrdersRequest extends FormRequest
     public function rules()
     {
         return [
-            'data' => 'required',
             'bairro' => 'required',
             'rua' => 'required',
             'numero' => 'required',
@@ -33,9 +32,9 @@ class OrdersRequest extends FormRequest
             'cpf' => 'required',
             'telefone' => 'required',
             'email' => 'required',
-            'pizza_id' => 'required',
+            'pizza_id'=> 'required',
             'tamanho' => 'required',
-            'preco_final' => 'required'
+            'preco_final' => 'required|numeric'
             //
         ];
     }
