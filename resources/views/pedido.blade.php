@@ -74,7 +74,7 @@
                         <option value="">3-Frango c/ Catupiry</option>
                         <option value="">4-Chocolate</option>
                         @foreach($pizzas as $pizza)
-                            <option value="{{$pizza->id}}">{{$pizza->sabor}}</option>
+                            <option value="{{$pizza->preco}}">{{$pizza->id}} - {{$pizza->sabor}}</option>
                         @endforeach
                     </select>
                 </div>
@@ -86,21 +86,22 @@
                 <div class="col-xs-3">
                    <select required id="tamanho" name="tamanho">
                        <option value="">Escolha um tamanho</option>
-                       <option value="1">Pequeno(15cm)</option>
-                       <option value="2">Médio(25cm)</option>
-                       <option value="3">Grande(35cm)</option>
-                       <option value="3">Gigante(45cm)</option>
+                       <option value="5.00">Pequeno(15cm)</option>
+                       <option value="10.00">Médio(25cm)</option>
+                       <option value="15.00">Grande(35cm)</option>
+                       <option value="20.00">Gigante(45cm)</option>
                    </select>
                 </div>
 
 
             </div>
+           
 
             <!-- preço -->
             <div class="form-group">
                 <label class="col-xs-6 control-label" for="textinput">Preço: </label>
-                <div class="col-xs-4">
-                    <input id="preco_final" name="preco_final" type="text" placeholder="0.00" class="form-control input-md">
+                <div class="col-xs-2">
+                    <input id="preco_final" name="preco_final" readonly="readonly" type="numeric" value="0.00" class="form-control">
                 </div>
             </div>
 
