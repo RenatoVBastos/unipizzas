@@ -13,6 +13,7 @@
 	@yield('navbar')
 	@yield('slideshow')
 	@yield('contato')
+	@yield('pedido')
 	<main class="container">
 		@yield('conteudo')
 	</main>

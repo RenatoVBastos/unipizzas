@@ -1,11 +1,15 @@
 @extends('layouts.templates')
 @section('title', 'Pedidos')
+@section('pedido')
+    <div class="box-contato">
+        <h1>Pedido</h1>
+        <h2>Faça aqui o seu pedido! </h2>
+    </div>
+    @endsection
 @section('conteudo')
     <form action="{{ action('OrdersController@store') }}" method="post" class="form-horizontal">
         {{csrf_field()}}
         <fieldset>
-
-            <legend>Faça seu pedido!</legend>
 
             <!-- Bairro, rua, número-->
             <div class="form-group">
