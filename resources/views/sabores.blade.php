@@ -23,78 +23,19 @@
         </div>
 
         <div class="portfolioContainer">
-
-            <div class="col-md-4 doce">
-                <img class="img-responsive circle" src="http://lorempizza.com/270/300" alt="image">
-                <h4>
-                    <a href="#">Sabor Doce</a>
-                </h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
-            </div>
-
-            <div class="col-md-4 doce">
-                <img class="img-responsive circle" src="http://lorempizza.com/270/300" alt="image">
-                <h4>
-                    <a href="#">Sabor Doce</a>
-                </h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
-            </div>
-
-            <div class="col-md-4 salgada">
-                <img class="img-responsive circle" src="http://lorempizza.com/270/300" alt="image">
-                <h4>
-                    <a href="#">Sabor Salgado</a>
-                </h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
-            </div>
-
-            <div class="col-md-4 salgada">
-                <img class="img-responsive circle" src="http://lorempizza.com/270/300" alt="image">
-                <h4>
-                    <a href="#">Sabor Salgado</a>
-                </h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
-            </div>
-
-            <div class="col-md-4 doce">
-                <img class="img-responsive circle" src="http://lorempizza.com/270/300" alt="image">
-                <h4>
-                    <a href="#">Sabor Doce</a>
-                </h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
-            </div>
-
-            <div class="col-md-4 salgada">
-                <img class="img-responsive circle" src="http://lorempizza.com/270/300" alt="image">
-                <h4>
-                    <a href="#">Sabor Salgado</a>
-                </h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
-            </div>
-
-            <div class="col-md-4 doce">
-                <img class="img-responsive circle" src="http://lorempizza.com/270/300" alt="image">
-                <h4>
-                    <a href="#">Sabor Doce</a>
-                </h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
-            </div>
-
-            <div class="col-md-4 salgada">
-                <img class="img-responsive circle" src="http://lorempizza.com/270/300" alt="image">
-                <h4>
-                    <a href="#">Sabor Salgado</a>
-                </h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
-            </div>
-
-            <div class="col-md-4 doce">
-                <img class="img-responsive circle" src="http://lorempizza.com/270/300" alt="image">
-                <h4>
-                    <a href="#">Sabor Doce</a>
-                </h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
-            </div>
-        </div>
+            @foreach($pizzas as $pizza)
+                    <div class="col-md-4 {{$pizza->filtro}} sabores">
+                        <img class="img-responsive circle" src="http://lorempizza.com/270/300" alt="image">
+                        <h4>
+                            <a href="#">{{$pizza -> sabor}}</a>
+                        </h4>
+                        <p>{{$pizza->descricao}}</p>
+                        @if(Auth::check())
+                            <button class="btn btn-success">Editar</button>
+                            <button class="btn btn-danger" href="{{ route('destroySabor', $pizza->id) }}">Deletar</button>
+                        @endif
+                    </div>
+            @endforeach
+    </div>
     </div>
 @endsection

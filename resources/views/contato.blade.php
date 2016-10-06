@@ -1,38 +1,43 @@
 @extends('layouts.templates')
 @section('title', 'Contato')
+@section('contato')
+<div class="box-contato">
+    <h1>Contato</h1>
+    <h2>Envie-nos suas sugestões, suas críticas ou qualquer outra solicitação. </h2>
+</div>
+@endsection
 @section('conteudo')
+    
     <form class="form-horizontal">
         <fieldset>
 
-        <legend>Contato</legend>
-
             <!-- Nome-->
             <div class="form-group">
-                <label class="col-md-4 control-label" for="textinput">Nome :</label>
+                <label class="col-md-4 control-label texto-align" for="textinput">Nome :</label>
                 <div class="col-md-4">
-                    <input id="textinput" name="textinput" type="text" placeholder="João da Silva" class="form-control input-md">
+                    <input id="textinput" name="textinput" type="text" class="form-control input-md">
                 </div>
             </div>
 
             <!-- E-mail-->
             <div class="form-group">
-                <label class="col-md-4 control-label" for="textinput">E-mail: </label>
+                <label class="col-md-4 control-label texto-align" for="textinput">E-mail: </label>
                 <div class="col-md-4">
-                    <input id="textinput" name="textinput" type="text" placeholder="joaozinho_bolaDEFOGO@gmail.com" class="form-control input-md">
+                    <input id="textinput" name="textinput" type="text" class="form-control input-md">
                 </div>
             </div>
 
             <!-- Assunto-->
             <div class="form-group">
-                <label class="col-md-4 control-label" for="textinput">Assunto: </label>
+                <label class="col-md-4 control-label texto-align" for="textinput">Assunto: </label>
                 <div class="col-md-4">
-                    <input id="textinput" name="textinput" type="text" placeholder="Digite aqui o assunto" class="form-control input-md">
+                    <input id="textinput" name="textinput" type="text" class="form-control input-md">
                 </div>
             </div>
 
             <!-- Mensagem -->
             <div class="form-group">
-                <label class="col-md-4 control-label" for="textarea">Mensagem: </label>
+                <label class="col-md-4 control-label texto-align" for="textarea">Mensagem: </label>
                 <div class="col-md-4">
                     <textarea class="form-control" id="textarea" name="textarea" placeholder="Escreva seu texto aqui"></textarea>
                 </div>

@@ -14,6 +14,7 @@ class OrdersTableSeeder extends Seeder
      */
     public function run()
     {
+
         $faker = Faker::create();
         DB::table('orders')->insert ([
             'bairro' => $faker->word,
@@ -29,5 +30,6 @@ class OrdersTableSeeder extends Seeder
 
             'id_pizza' => 1
         ]);
+
     }
 }

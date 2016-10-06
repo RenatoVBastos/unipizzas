@@ -19,7 +19,7 @@
                     <p class="grey-text text-lighten-4">Avenida Athos de Silveira Ramos, <br>
                      CCMN, NCE, sala 1030. <br>
                      Fundão, Rio de Janeiro </p> <br>
-                    <p class="grey-text text-lighten-4">Telefone: (21) 99999-9999
+                    <p class="grey-text text-lighten-4">Telefone: (21) 3938-3336
                 </div>
             </div>
         </div>
