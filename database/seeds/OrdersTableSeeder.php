@@ -14,21 +14,22 @@ class OrdersTableSeeder extends Seeder
      */
     public function run()
     {
-//        $faker = Faker::create();
-//        DB::table('orders')->insert ([
-//            'data' => $faker->date('Y-m-d', 'now'),
-//            'bairro' => $faker->word,
-//            'rua' => $faker->name,
-//            'numero' => $faker->numberBetween(1, 2000),
-//            'complemento' => $faker->numberBetween(1, 200),
-//            'cep' => $faker->postcode,
-//            'cpf' => '99999999999',
-//            'telefone' => $faker->phoneNumber,
-//            'email' => $faker->email,
-//            'tamanho' => $faker->numberBetween(1, 4),
-//            'preco_final' => $faker->randomFloat(2, 0, 70),
-//
-//            'id_pizza' => 1
-//        ]);
+
+        $faker = Faker::create();
+        DB::table('orders')->insert ([
+            'bairro' => $faker->word,
+            'rua' => $faker->name,
+            'numero' => $faker->numberBetween(1, 2000),
+            'complemento' => $faker->numberBetween(1, 200),
+            'cep' => $faker->postcode,
+            'cpf' => '99999999999',
+            'telefone' => $faker->phoneNumber,
+            'email' => $faker->email,
+            'tamanho' => $faker->numberBetween(1, 4),
+            'preco_final' => $faker->randomFloat(2, 0, 70),
+
+            'id_pizza' => 1
+        ]);
+
     }
 }

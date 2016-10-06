@@ -10,7 +10,7 @@ class Order extends Model
 {
     use SoftDeletes;
 
-    protected $fillable = ['data', 'bairro', 'rua', 'numero', 'complemento', 'cep', 'cpf', 'telefone', 'email', 'id_pizza', 'tamanho', 'preco_final'];
+    protected $fillable = ['bairro', 'rua', 'numero', 'complemento', 'cep', 'cpf', 'telefone', 'email', 'id_pizza', 'tamanho', 'preco_final'];
 
     protected $dates = ['deleted_at'];
 
