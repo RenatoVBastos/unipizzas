@@ -63,18 +63,25 @@
             </div>
 
             <!-- Sabor, Tamanho, Preço-->
+            
             <div class="form-group">
-                <label class="col-xs-1 control-label" for="textinput">Sabor: </label>
+                <label class="col-xs-1 control-label" for="">Sabor: </label>
                 <div class="col-xs-3">
                     <select required id="pizza_id" name="pizza_id">
                         <option value="">Escolha um sabor</option>
-                        <option value="1">1-Mussarela</option>
-                        <option value="2">2-Calabresa</option>
-                        <option value="3">3-Frango c/ Catupiry</option>
-                        <option value="4">4-Chocolate</option>
+                        <option value="">1-Mussarela</option>
+                        <option value="">2-Calabresa</option>
+                        <option value="">3-Frango c/ Catupiry</option>
+                        <option value="">4-Chocolate</option>
+                        @foreach($pizzas as $pizza)
+                            <option value="{{$pizza->id}}">{{$pizza->sabor}}</option>
+                        @endforeach
                     </select>
                 </div>
+            
+            
 
+            
                 <label class="col-xs-1 control-label" for="selectbasic">Tamanho: </label>
                 <div class="col-xs-3">
                    <select required id="tamanho" name="tamanho">

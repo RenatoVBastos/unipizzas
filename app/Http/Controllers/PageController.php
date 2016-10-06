@@ -21,7 +21,12 @@ class PageController extends Controller
 
     public function pedido()
     {
-        return view('pedido');
+       // App\Pizza $pizzas;
+        $pizzas = \App\Pizza::all();
+
+        return view('pedido', compact('pizzas'));
+        //return view('pedido')->with('pizzas', $pizzas);
+        //return view('pedido');
     }
 
     public function contato()

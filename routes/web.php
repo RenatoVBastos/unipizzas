@@ -51,5 +51,10 @@ Route::group(['middleware' => 'auth'], function () {
 });
 
 
+/*Route::get('/pedido', function(){
 
+	$pizzas = \App\Pizza::all();
+
+	return view('pedido')->with('pizzas', $pizzas);
+});
 

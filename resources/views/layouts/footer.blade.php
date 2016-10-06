@@ -5,6 +5,7 @@
         <script type="text/javascript" src="{{asset('js/isotope.pkgd.min.js')}}"></script>
         <script type="text/javascript" src="{{asset('js/sabores.js')}}"></script>
         <script type="text/javascript" src="{{asset('js/admin.js')}}"></script>
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 
 
         <div class="container">
