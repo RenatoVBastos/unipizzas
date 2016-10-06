@@ -2566,7 +2566,6 @@ input[type="search"]::-webkit-search-decoration {
  * Define consistent border, margin, and padding.
  */
 fieldset {
-  border: 1px solid #c0c0c0;
   margin: 0 2px;
   padding: 0.35em 0.625em 0.75em;
 }
@@ -4956,7 +4955,7 @@ small {
 .btn, .btn-large {
   text-decoration: none;
   color: #fff;
-  background-color: #26a69a;
+  background-color: #A10D0D;
   text-align: center;
   letter-spacing: .5px;
   transition: .2s ease-out;
@@ -4964,7 +4963,7 @@ small {
 }
 
 .btn:hover, .btn-large:hover {
-  background-color: #2bbbad;
+  background-color: #6E0A0A;
 }
 
 .btn-floating {
@@ -5596,7 +5595,7 @@ button:focus {
 
 label {
   font-size: 0.8rem;
-  color: #9e9e9e;
+  color: #4D4D4D;
 }
 
 /* Text Inputs + Textarea

@@ -51,7 +51,7 @@
 
                 <label class="col-xs-1 control-label" for="textinput">E-mail: </label>
                 <div class="col-xs-4">
-                    <input id="email" name="email" type="text" required placeholder="joaozinho_bolaDEFOGO@gmail.com" class="form-control input-md">
+                    <input id="email" name="email" type="text" required placeholder="email@email.com" class="form-control input-md">
                 </div>
 
                 <label class="col-xs-1 control-label" for="textinput">Telefone:</label>

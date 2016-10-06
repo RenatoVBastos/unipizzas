@@ -6,13 +6,13 @@
 <div class="row">
     <div class="col-lg-6 col-md-6 col-sm-5 col-xs-2">
         <h1 class="page-header">Sobre Nós</h1>
+        <div id="text-home">A história da UniPizzas começa em 2016, na ilha do Fundão. Era nossa primeira loja. Um lugar bem simples, com apenas 5 funcionários. Nossas massas e pizzas rapidamente se tornaram um sucesso e, junto com o bom atendimento, foram as responsáveis pela nossa expansão. Ainda em 2016, inauguramos mais duas lojas - uma na Ilha do Governador e outra na Barra da Tijuca. Qualidade e bom atendimento são características marcantes na história da UniPizzas. Esses atributos a transformaram em um grupo forte e respeitável no mercado alimentício, a tornaram uma referência nos ramos de restaurante, domicílio e fast food e fizeram com que a UniPizzas conquistasse um lugar cativo no coração dos cariocas.</div>
     </div>
     <div class="col-lg-6 col-md-6 col-sm-5 col-xs-2">
-        <h1 class="page-header">Siga-nos!</h1>
-        <img style="position: relative" class="img-responsive" src="http://imperiolucrativo.com.br/wp-content/uploads/2015/02/redes-sociais.png">
+        <h1 class="page-header">Confira nossas Pizzas!</h1>
+        <a href="{{ route('sabores') }}"><img style="margin: auto; vertical-align: middle; text-align: center; height: 210px;" class="img-responsive" src="http://pngimg.com/upload/small/pizza_PNG7149.png"></a>
     </div>
 
-<div id="text-home"class="col-lg-6 col-md-6 col-sm-5 col-xs-2">A história da UniPizzas começa em 2016, na ilha do Fundão. Era nossa primeira loja. Um lugar bem simples, com apenas 5 funcionários. Nossas massas e pizzas rapidamente se tornaram um sucesso e, junto com o bom atendimento, foram as responsáveis pela nossa expansão. Ainda em 2016, inauguramos mais duas lojas - uma na Ilha do Governador e outra na Barra da Tijuca. Qualidade e bom atendimento são características marcantes na história da UniPizzas. Esses atributos a transformaram em um grupo forte e respeitável no mercado alimentício, a tornaram uma referência nos ramos de restaurante, domicílio e fast food e fizeram com que a UniPizzas conquistasse um lugar cativo no coração dos cariocas.</div>
 </div>
 
 @endsection
