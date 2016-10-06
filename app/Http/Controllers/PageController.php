@@ -16,7 +16,9 @@ class PageController extends Controller
 
     public function sabores()
     {
-        return view('sabores');
+        $pizzas = \App\Pizza::all();
+
+        return view('sabores')->with('pizzas', $pizzas);
     }
 
     public function pedido()

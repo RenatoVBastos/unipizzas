@@ -6,6 +6,9 @@
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
     <li href="#" class="brand-logo left" style="margin-top: 9px;">UniPizzas</li>
       <ul class="nav navbar-nav navbar-right">
+        @if(Auth::check())
+          <li><a href="{{ route('admin') }}">Administrador</a></li>
+        @endif
         <li><a href="{{ route('home') }}">Home</a></li>
         <li><a href="{{ route('sabores') }}">Sabores</a></li>
         <li><a href="{{ route('pedido') }}">Faça seu pedido</a></li>

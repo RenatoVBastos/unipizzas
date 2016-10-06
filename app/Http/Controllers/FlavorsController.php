@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Pizza;
 use App\Http\Requests\FlavorsRequest;
+use Illuminate\Support\Facades\App;
 use Illuminate\Support\Facades\Session;
 
 class FlavorsController extends Controller
@@ -71,6 +72,8 @@ class FlavorsController extends Controller
      */
     public function destroy($id)
     {
-        //
+        \App\Pizza::destroy($id);
+
+        return back();
     }
 }

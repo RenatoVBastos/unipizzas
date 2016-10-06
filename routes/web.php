@@ -36,7 +36,9 @@ Route::get('logout', ['as' => 'logout', 'uses' => 'HomeController@logOut']);
 
 //Rotas das CRUDs
 
-Route::post('modalSabores', ['as' => 'modalCSabores', 'uses' => 'FlavorsController@store']);
+Route::post('saboresCreate', ['as' => 'saboresCreate', 'uses' => 'FlavorsController@store']);
+
+Route::post('destroy/{id}', ['as' => 'destroySabor', 'uses' => 'FlavorsController@destroy']);
 
 Route::post('pedido', ['as' => 'enviar_pedido', 'uses' => 'OrdersController@store']);
 
@@ -47,6 +49,7 @@ Route::post('pedido', ['as' => 'enviar_pedido', 'uses' => 'OrdersController@stor
 //Rotas do admin
 
 Route::group(['middleware' => 'auth'], function () {
+
     Route::get('admin', ['as' => 'admin', 'uses' => 'Admin@index']);
 });
 
