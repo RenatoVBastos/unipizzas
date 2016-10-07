@@ -18,7 +18,7 @@ Auth::routes();
 
 
 //Rotas do visitante
-Route::get('home',['as' => 'home', 'uses' => 'HomeController@index']);
+Route::get('home',['as' => 'home', 'uses' => 'PageController@home']);
 
 Route::get('/', ['as' => 'home', 'uses' => 'PageController@home']);
 

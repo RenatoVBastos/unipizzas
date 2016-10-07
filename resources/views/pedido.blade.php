@@ -125,18 +125,22 @@
         <table class="table table-striped">
             <thead>
                 <tr class="row">
-                    <th class="col-xs-1">Criado em</th>
-                    <th class="col-xs-3">DRE</th>
-                    <th class="col-xs-1"></th>
-                    <th class="col-xs-1"></th>
+                    <th class="col-xs-1">Id</th>
+                    <th class="col-xs-1">CEP</th>
+                    <th class="col-xs-1">Telefone</th>
+                    <th class="col-xs-1">Preço</th>
+                    <th class="col-xs-2">Data do Pedido</th>
                 </tr>
             </thead>
             <tbody>
                 @foreach($orders as $order)
                     <tr class="row">
-                        <td class="col-xs-2">{{$order->create_at}}</td>
-                        <td class="col-xs-3">{{$order->id}}</td>
-                        <td class="col-xs-1">
+                        <td class="col-xs-1">{{$order->id}}</td>
+                        <td class="col-xs-1">{{$order->cep}}</td>
+                        <td class="col-xs-1">{{$order->telefone}}</td>
+                        <td class="col-xs-1">{{$order->preco_final}}</td>
+                        <td class="col-xs-2">{{$order->created_at}}</td>
+                        
                             
                         </td>
                         <td class="col-xs-1 text-right">

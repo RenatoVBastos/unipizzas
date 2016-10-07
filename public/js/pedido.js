@@ -1,5 +1,5 @@
 
-var pizza_preco;
+
 
 /*$(document).ready( function() {
    
@@ -30,7 +30,7 @@ $('#id_pizza').on('change', function preco_pizza(pizza){
 	
 	console.log(pizza_preco);
 
-	$result= pizzas.target.value;
+	$result= pizza.target.value;
 	console.log($result);
 
 	$('#tamanho').on('change', function (tam){
