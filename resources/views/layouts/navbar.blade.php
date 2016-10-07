@@ -13,6 +13,9 @@
         <li><a href="{{ route('sabores') }}">Sabores</a></li>
         <li><a href="{{ route('pedido') }}">Faça seu pedido</a></li>
         <li><a href="{{ route('contato') }}">Contato</a></li>
+        @if(Auth::Check())
+            <li><a href="{{ route('logout') }}">Logout</a></li>
+        @endif
       </ul>
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->

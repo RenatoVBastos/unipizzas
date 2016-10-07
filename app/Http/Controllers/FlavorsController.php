@@ -11,7 +11,7 @@ use Illuminate\Support\Facades\Session;
 class FlavorsController extends Controller
 {
     private $pizza;
-    
+
     public function create()
     {
         //
@@ -29,6 +29,8 @@ class FlavorsController extends Controller
         \App\Pizza::create($request->all());
 
         Session::flash('message', 'Sabor adicionado com sucesso!');
+
+        return back();
     }
 
     /**

@@ -14,6 +14,7 @@
 	@yield('slideshow')
 	@yield('contato')
 	@yield('pedido')
+	@yield('admin')
 	<main class="container">
 		@yield('conteudo')
 	</main>

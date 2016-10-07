@@ -29,7 +29,7 @@
                         <h4>
                             <a href="#">{{$pizza -> sabor}}</a>
                         </h4>
-                        <p>{{$pizza->descricao}}</p>
+                        <p class="descricao">{{$pizza->descricao}}</p>
                         @if(Auth::check())
                             <button class="btn btn-success">Editar</button>
                             <button class="btn btn-danger" href="{{ route('destroySabor', $pizza->id) }}">Deletar</button>

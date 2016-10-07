@@ -15,8 +15,9 @@ class Admin extends Controller
      */
     public function index()
     {
+        $orders = \App\Order::all();
 
-            return view('admin.admin');
+        return view('admin.admin', compact('orders'));
 
     }
 
