@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 
 use App\Http\Requests;
 
+
 class PageController extends Controller
 {
     public function home()
@@ -25,8 +26,10 @@ class PageController extends Controller
     {
        
         $pizzas = \App\Pizza::all();
+        $orders = \App\Order::all();
 
-        return view('pedido')->with('pizzas', $pizzas);
+        //return view('pedido')->with('pizzas', $pizzas);
+        return view('pedido',compact('pizzas', 'orders'));
        
     }
 

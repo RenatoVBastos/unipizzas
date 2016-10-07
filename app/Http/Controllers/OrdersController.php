@@ -4,7 +4,9 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Order;
+use App\Pizza;
 use App\Http\Requests\OrdersRequest;
+
 
 class OrdersController extends Controller
 {

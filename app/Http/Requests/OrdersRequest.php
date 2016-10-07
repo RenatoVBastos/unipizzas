@@ -32,7 +32,7 @@ class OrdersRequest extends FormRequest
             'cpf' => 'required',
             'telefone' => 'required',
             'email' => 'required',
-            'pizza_id'=> 'required',
+            'id_pizza'=> 'required',
             'tamanho' => 'required',
             'preco_final' => 'required|numeric'
             //

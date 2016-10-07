@@ -18,7 +18,7 @@ Auth::routes();
 
 
 //Rotas do visitante
-Route::get('home',['as' => 'login', 'uses' => 'HomeController@index']);
+Route::get('home',['as' => 'home', 'uses' => 'HomeController@index']);
 
 Route::get('/', ['as' => 'home', 'uses' => 'PageController@home']);
 
@@ -41,6 +41,8 @@ Route::post('saboresCreate', ['as' => 'saboresCreate', 'uses' => 'FlavorsControl
 Route::post('destroy/{id}', ['as' => 'destroySabor', 'uses' => 'FlavorsController@destroy']);
 
 Route::post('pedido', ['as' => 'enviar_pedido', 'uses' => 'OrdersController@store']);
+
+Route::get('destroy/{id}', ['as' => 'destroyOrder', 'uses' => 'OrdersController@destroy']);
 
 
 

@@ -28,6 +28,7 @@ class CreateOrdersTable extends Migration
             $table->integer('tamanho');
             $table->float('preco_final');
             $table->timestamps();
+            $table->softDeletes();
 
         });
     }
