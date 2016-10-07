@@ -128,6 +128,8 @@
                     <th class="col-xs-1">Id</th>
                     <th class="col-xs-1">CEP</th>
                     <th class="col-xs-1">Telefone</th>
+                    <th class="col-xs-1">Sabor</th>
+                    <th class="col-xs-1">Tamanho</th>
                     <th class="col-xs-1">Preço</th>
                     <th class="col-xs-2">Data do Pedido</th>
                 </tr>
@@ -138,6 +140,8 @@
                         <td class="col-xs-1">{{$order->id}}</td>
                         <td class="col-xs-1">{{$order->cep}}</td>
                         <td class="col-xs-1">{{$order->telefone}}</td>
+                        <td class="col-xs-1">{{$order->id_pizza}}</td>
+                        <td class="col-xs-1">{{$order->tamanho}}</td>
                         <td class="col-xs-1">{{$order->preco_final}}</td>
                         <td class="col-xs-2">{{$order->created_at}}</td>
                         
@@ -148,7 +152,7 @@
                                 {{method_field('DELETE')}}
                                 {{csrf_field()}}
 
-                                <button id="destroyOrder" name="destroyOrder" class="btn btn-danger" type="submit">Deletar</button>
+                                <button id="destroyOrder" name="destroyOrder" class="btn btn-danger" type="submit">X</button>
                             </form>
                         </td>
                     </tr>
