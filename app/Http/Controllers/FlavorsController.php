@@ -10,7 +10,8 @@ use Illuminate\Support\Facades\Session;
 
 class FlavorsController extends Controller
 {
-
+    private $pizza;
+    
     public function create()
     {
         //

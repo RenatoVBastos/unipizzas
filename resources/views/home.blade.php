@@ -4,15 +4,17 @@
 
 <!-- Titulo -->
 <div class="row">
-    <div class="col-lg-6 col-md-6 col-sm-5 col-xs-2">
+    <div class="col-md-12">
+
+    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
         <h1 class="page-header">Sobre Nós</h1>
         <div id="text-home">A história da UniPizzas começa em 2016, na ilha do Fundão. Era nossa primeira loja. Um lugar bem simples, com apenas 5 funcionários. Nossas massas e pizzas rapidamente se tornaram um sucesso e, junto com o bom atendimento, foram as responsáveis pela nossa expansão. Ainda em 2016, inauguramos mais duas lojas - uma na Ilha do Governador e outra na Barra da Tijuca. Qualidade e bom atendimento são características marcantes na história da UniPizzas. Esses atributos a transformaram em um grupo forte e respeitável no mercado alimentício, a tornaram uma referência nos ramos de restaurante, domicílio e fast food e fizeram com que a UniPizzas conquistasse um lugar cativo no coração dos cariocas.</div>
     </div>
-    <div class="col-lg-6 col-md-6 col-sm-5 col-xs-2">
+    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
         <h1 class="page-header">Confira nossas Pizzas!</h1>
         <a href="{{ route('sabores') }}"><img style="margin: auto; vertical-align: middle; text-align: center; height: 210px;" class="img-responsive" src="http://pngimg.com/upload/small/pizza_PNG7149.png"></a>
     </div>
-
+</div>
 </div>
 
 @endsection
@@ -120,7 +122,7 @@
         .jssora22l.jssora22ldn { background-position: -250px -31px; }
         .jssora22r.jssora22rdn { background-position: -310px -31px; }
     </style>
-    <div id="jssor_1" style="position: relative; margin: 0 auto; top: 0px; left: 0px; width: 1300px; height: 500px; overflow: hidden; visibility: hidden;">
+    <div id="jssor_1" style="position: relative; margin: 0 auto; top: 15px; left: 0px; width: 1300px; height: 500px; overflow: hidden; visibility: hidden;">
         <!-- Loading Screen -->
         <div data-u="loading" style="position: absolute; top: 0px; left: 0px;">
             <div style="filter: alpha(opacity=70); opacity: 0.7; position: absolute; display: block; top: 0px; left: 0px; width: 100%; height: 100%;"></div>

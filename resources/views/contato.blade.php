@@ -8,7 +8,7 @@
 @endsection
 @section('conteudo')
     
-    <form class="form-horizontal">
+    <form class="form-horizontal" method="post">
         <fieldset>
 
             <!-- Nome-->

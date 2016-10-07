@@ -128,4 +128,27 @@ body, * {
  	margin-top: 5px;
  }
 
+<<<<<<< HEAD
+.fb-like-box {
+	border: solid 5px #0F0F0F;
+}
+
+.navbar {
+	z-index: 999999;
+	position: fixed;
+}
+.footer-left {
+	background-color: #1F1E1E;
+	padding: 20px 0;
+}
+
+.row {
+	padding-top: 30px;
+}
+
+.footer-copyright {
+	background-color: #171717!important;
+}
+=======
  
+>>>>>>> 772eef9c3757d588e9e49caaa56c73101eee0dd9

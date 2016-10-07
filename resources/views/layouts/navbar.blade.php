@@ -4,7 +4,7 @@
 
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-    <li href="#" class="brand-logo left" style="margin-top: 9px;">UniPizzas</li>
+    <li style="margin-top: 17px;"><img src="http://imgur.com/cygoocZ.gif" style="height: 50px;"></li>
       <ul class="nav navbar-nav navbar-right">
         @if(Auth::check())
           <li><a href="{{ route('admin') }}">Administrador</a></li>
